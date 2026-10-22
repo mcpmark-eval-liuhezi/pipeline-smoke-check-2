@@ -1,0 +1,11 @@
+name: Smoke Check
+
+on:
+  push
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print smoke marker
+        run: echo "SMOKE-PIPELINE-OK"
